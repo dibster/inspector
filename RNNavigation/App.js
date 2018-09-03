@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import { StackNavigator } from "react-navigation";
-import Settings from "./screens/Settings";
+import Result from "./screens/Results";
 import Home from "./screens/Home";
+import Scan from "./screens/Scan";
 
 const AppNavigator = StackNavigator({
-  SettingScreen: { screen: Settings },
-  HomeScreen: { screen: Home }
+  HomeScreen: { screen: Home },
+  ScanScreen: { screen: Scan },
+  ResultScreen: { screen: Result }
 });
 
 export default class App extends Component {
